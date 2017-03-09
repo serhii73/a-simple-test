@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script type="text/html" id="test_template">
+<div class="wrapper">
+  <h1>Тест по программированию</h1>
+  <form method = "post" action="#">
+
+
+    <h4><%= q1 %></h4>
+    <ul>
+      <li><label><%= a1_on_q1 %><input type="radio" name="question_one" value="true"></label></li>
+      <li><label><%= a2_on_q1 %><input type="radio" name="question_one" value="false"></label></li>
+      <li><label><%= a3_on_q1 %><input type="radio" name="question_one" value="false"></label></li>
+      <li><label><%= a4_on_q1 %><input type="radio" name="question_one" value="false"></label></li>
+    </ul>
+
+
+
+
+    <h4><%= q2 %></h4>
+    <ul>
+      <li><label><%= a1_on_q2 %><input type="radio" name="question_two" value="false"></label></li>
+      <li><label><%= a2_on_q2 %><input type="radio" name="question_two" value="true"></label></li>
+      <li><label><%= a3_on_q2 %><input type="radio" name="question_two" value="false"></label></li>
+      <li><label><%= a4_on_q2 %><input type="radio" name="question_two" value="false"></label></li>
+    </ul>
+
+
+
+
+    <h4><%= q3 %></h4>
+    <ul>
+      <li><label><%= a1_on_q3 %><input type="radio" name="question_three" value="false"></label></li>
+      <li><label><%= a2_on_q3 %><input type="radio" name="question_three" value="false"></label></li>
+      <li><label><%= a3_on_q3 %><input type="radio" name="question_three" value="false"></label></li>
+      <li><label><%= a4_on_q3 %><input type="radio" name="question_three" value="true"></label></li>
+    </ul>
+
+
+
+
+    <h4><%= q4 %></h4>
+    <ul>
+      <li><label><%= a1_on_q4 %><input type="radio" name="question_four" value="false"></label></li>
+      <li><label><%= a2_on_q4 %><input type="radio" name="question_four" value="false"></label></li>
+      <li><label><%= a3_on_q4 %><input type="radio" name="question_four" value="true"></label></li>
+      <li><label><%= a4_on_q4 %><input type="radio" name="question_four" value="false"></label></li>
+    </ul>
+
+
+
+
+    <h4><%= q5 %></h4>
+    <ul>
+      <li><label><%= a1_on_q5 %><input type="radio" name="question_five" value="true"></label></li>
+      <li><label><%= a2_on_q5 %><input type="radio" name="question_five" value="false"></label></li>
+      <li><label><%= a3_on_q5 %><input type="radio" name="question_five" value="false"></label></li>
+      <li><label><%= a4_on_q5 %><input type="radio" name="question_five" value="false"></label></li>
+    </ul>
+
+
+
+
+
+    <button><a href="#" id="go">Проверить</a></button>
+
+  </form>
+</div>
+</script>
+<div id="modal_form"><!-- Сaмo oкнo -->
+      <span id="modal_close">X</span> <!-- Кнoпкa зaкрыть -->
+      <!-- Тут любoе сoдержимoе -->
+      <div class="inner_result">
+        
+      </div>
+</div>
+<div id="overlay"></div><!-- Пoдлoжкa -->
+<script type="text/javascript" src="js/template.js"></script>
+<script type="text/javascript" src="https://yastatic.net/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
